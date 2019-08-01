@@ -429,6 +429,20 @@ for i in range(0, (len(all_articles_list) - window)):
 
 
     # NOTE: This includes all the numbers appearing in each article
+    
+    
+    # Creating vocabulary objects for each window
+                                     
+                                     
+    short_window_all_vocab = short_all_docs_frequency
+    
+    short_window_retained_vocab = []
+    
+    for pair in short_window_all_vocab:
+        if pair[0] in short_retained_vocabulary:
+            short_window_retained_vocab.append(pair)
+     
+    # TODO: Add new text file?
 
 
     """
