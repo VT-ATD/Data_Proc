@@ -98,7 +98,7 @@ def get_frequency(processed_text_list):
 
 
 
-# In[ ]:
+# In[17]:
 
 
 # directory = "/home/sdbookhu/FullNews/"
@@ -408,5 +408,38 @@ for files in glob.glob(directory+'*.csv'):
 # In[ ]:
 
 
+"""
+Use the script below to make changes to the CSV file and save as a different CSV file 
+"""
 
+
+
+# for i in range(0, len(data_all)):
+
+#     news_url.append(data_url[i])
+#     news_source.append(data_source[i])
+#     news_publish_time.append(data_publish_time[i])
+#     news_title.append(data_title[i])
+#     news_description.append(data_description[i])
+#     news_short_content.append(data_short_content[i])
+#     news_full_content.append(data_full_content[i])
+
+
+# news_file_df = DataFrame({'url': news_url,
+#                 'source': news_source,
+#                 'published_at': news_publish_time,
+#                 'title': news_title,
+#                 'description': news_description,
+#                 'short_content': news_short_content,
+#                 'full_content': news_full_content})
+
+# news_file_df = news_file_df[['url', 'source', 'published_at', 'title',
+#                                  'description', 'short_content', 'full_content']]
+
+# #     save_directory = save_directory + 'enriched_' + name 
+
+# save_directory = save_directory + name
+# print(save_directory)
+
+# export_csv = news_file_df.to_csv(save_directory, index = None, header=True)
 
